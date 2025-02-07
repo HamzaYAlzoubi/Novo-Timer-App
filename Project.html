@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize CSS -->
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <!-- Google Font -->
+    <style>@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");</style>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- my_framework -->
+    <link rel="stylesheet" href="CSS/framework.css" />
+    <!-- Icon for Page -->
+    <link rel="Icon" href="Image/1.Header/Novo Logo Icon page.png" />
+    <!-- CSS files -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/projects.css" />
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <title>Novo Team Manager | Dashboard</title>
+  </head>
+  <body>
+    <!-- Start Header-->
+    <header id="header">
+      <div class="container">
+        <a href="#"><img id="Logo" src="Image/1.Header/Novo Logo.png" alt=""/></a>
+      </div>
+      <i class="fa-solid fa-bars flex-center"></i>
+    </header>
+    <!-- End Header-->
+
+    <!-- Start Sidebar -->
+    <nav class="sidebar">
+      <div class="logo">
+        <img src="Image/1.Header/Novo Logo Icon page.png" alt="" />
+        <span class="logo-icon">Novo</span>
+        <i class="fa-solid fa-xmark X_icon flex-center"></i>
+      </div>
+      <ul class="menu">
+        <li class="menu-item Dashboard_page" href="index.html">
+          <i class="fa-solid fa-gauge icon"></i>
+          <span>سجل النشاطات</span>
+        </li>
+        <li class="menu-item Projects_page active" href="Project.html">
+          <i class="fa-solid fa-folder-open icon"></i
+          ><span>ﺇدارة المشاريع</span>
+          <span class="badge">3/5</span>
+        </li>
+        <li class="menu-item Repoets_page">
+          <i class="fa-solid fa-file-lines icon"></i>
+          <span>ﺇحصائيات</span>
+          <span class="new-badge">New</span>
+        </li>
+        <hr />
+        <li class="menu-item DownSB icon Suggestions_page">
+          <i class="fa-solid fa-toolbox icon"></i
+          ><span>صندوق الاقتراحات</span>
+          <span class="badge">164</span>
+        </li>
+        <li class="menu-item DownSB SBsettings icon">
+          <i class="fa-solid fa-gear icon"></i>
+          <span>ﺇعدادات</span>
+        </li>
+      </ul>
+    </nav>
+    <!-- End Sidebar -->
+    <button class="Add_Big_Project">ﺇضافة مشروع</button>
+
+    <form class="Edit_container flex-center">
+        <span>اسم المشروع</span>
+        <input type="text">
+        <div class="p">
+            <div class="Cancel">Cancel</div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <section>
+        <div class="container container_Projects">
+            <div class="container_Project">
+                <div class="container_Big_Project flex-center">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>1253h 42m</span>
+                    <span class="Project_Name">البرمجة</span>
+                    <i class="fa-solid fa-ellipsis-vertical editProject flex-center">
+                        <div class="EDContainer">
+                            <div class="Edit">Edit</div>
+                            <hr>
+                            <div class="Delete">Delete</div>
+                        </div>
+                    </i>
+                </div>
+                <div class="container_min_Project_containers display_none">
+                    <div class="container_min_Project flex-center">
+                        <i class="fa-solid fa-angle-right "></i>
+                        <span>200h 42m</span>
+                        <span class="Project_Name"> C++تعلم ال</span>
+                        <i class="fa-solid fa-ellipsis-vertical editProject flex-center">
+                            <div class="EDContainer">
+                                <div class="Edit">Edit</div>
+                                <div class="Delete">Delete</div>
+                            </div>
+                        </i>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/Project.js"></script>
+  </body>

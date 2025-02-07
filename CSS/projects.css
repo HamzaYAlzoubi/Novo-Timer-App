@@ -1,0 +1,104 @@
+.container_Big_Project,
+.container_min_Project{
+    background-color: #f3f3f3;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0px 40px;
+    margin-bottom: 1px;
+}
+.container_min_Project{
+    background-color: #fff;
+    border: 1px solid;
+    margin: 0px 1px;
+}
+
+/* Start angle */
+.angle_Down{
+    transition: 0.5s;
+    transform: rotate(90deg);
+}
+/* End angle */
+
+
+/* Start Edit Project button */
+.editProject{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+}
+.editProject:hover{
+    background-color: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+}
+.editProject .EDContainer{
+    background-color: #eee;
+    border: solid 1px ;
+    color: #000;
+    position: absolute;
+    top: 5px;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 999;
+    border-radius: 10px;
+    display: none;
+}
+hr{
+    width: 100%;
+}
+.Edit:hover{
+    color: green;
+    cursor: pointer;
+}
+.Delete:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.Edit_container{
+    background: white; /* تأكد من أن الخلفية بيضاء */
+    padding: 20px;
+    border-radius: 12px; /* زوايا ناعمة */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    width: 220px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    flex-direction: column;
+    display: none;
+}
+.Edit_container [type='text']{
+    outline: none;
+    border: solid 1px;
+    margin: 25px 0px;
+    padding: 4px;
+    border-radius: 5px;
+}
+.Edit_container .p{
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Edit_container [type='submit'],
+.Edit_container .Cancel{
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    border: solid 1px;
+}
+.Edit_container [type='submit']:hover,
+.Edit_container .Cancel:hover{
+    background-color: #fff;
+    color: #000;
+}
+/* End Edit Project button */

@@ -1,0 +1,64 @@
+/* Start Timer */
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.timer-container img {
+  width: 100px;
+}
+.no {
+  font-size: 35px;
+}
+.timer-container .O_timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: solid 2px black;
+  cursor: pointer;
+}
+.timer-container #projects {
+  margin: 70px 0px;
+  width: 50px;
+}
+.timer-container .stop_start {
+  margin-top: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fa-rotate-left,
+.fa-rotate-right {
+  font-size: 25px;
+  cursor: pointer;
+}
+.fa-rotate-left {
+  margin-right: 25px;
+}
+.fa-rotate-right {
+  margin-left: 25px;
+}
+.fa-rotate-left span,
+.fa-rotate-right span {
+  font-size: 10px;
+}
+.timer-container .fa-plus {
+  transform: translate(120px, 2px);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.timer-container .fa-plus:hover {
+  border: solid 2px black;
+}
