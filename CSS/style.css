@@ -33,6 +33,8 @@ a{
 }
 body{
     overflow-x: hidden;
+    background-color: #161920;
+	color:#fff;
 }
   /* Mobail */
 @media (max-width: 767px)  {
